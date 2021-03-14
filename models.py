@@ -11,12 +11,12 @@ class Professor(models.Model):
     lastname = models.CharField(max_length=50)
     link = models.CharField(max_length=2000)
     rating = models.CharField(max_length=50)
-    class_taught1 = models.CharField(max_length=50, blank=True)
-    class_taught2 = models.CharField(max_length=50, blank=True)
-    class_taught3 = models.CharField(max_length=50, blank=True)
-    class_taught4 = models.CharField(max_length=50, blank=True)
-    class_taught5 = models.CharField(max_length=50, blank=True)
-    class_taught6 = models.CharField(max_length=50, blank=True)
+    class_taught1 = models.CharField(max_length=50, default='')
+    class_taught2 = models.CharField(max_length=50, default='')
+    class_taught3 = models.CharField(max_length=50, default='')
+    class_taught4 = models.CharField(max_length=50, default='')
+    class_taught5 = models.CharField(max_length=50, default='')
+    class_taught6 = models.CharField(max_length=50, default='')
 
 class Review(models.Model):
     name = models.CharField(max_length=50)
