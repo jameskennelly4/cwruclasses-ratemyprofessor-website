@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    # path('', include('myapp.urls')), 
-    path('app/', include('myapp.urls')),
+    path('', include('myapp.urls')),
+    #path('app/', include('myapp.urls')),
     path('admin/', admin.site.urls),
     # we want to figure out how the root path works
     # we want class_ticker/ path
